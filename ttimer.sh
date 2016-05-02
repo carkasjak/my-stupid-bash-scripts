@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# Requires espeak, figlet and a notification daemon to work correctly.
+# Requires pulseaudio, figlet and a notification daemon (like dunst) to work as intended, 
+# but you can easily comment out or delete the parts you don't want.
 
 # Default timer is 120 seconds (2 minutes)
 sleeptime=120
+#Edit the message string to output when the time is up.
 messagestring="Your tea is ready!"
+# Choose an alarm sound to use
+alarmsound="/home/carkasjak/Audio/1happyhello.wav"
 
 
 # Accepts an integer as input to specify number of seconds
@@ -15,20 +19,18 @@ else
 	echo ""
 fi
 
-
+# Counting down
 for (( i="$sleeptime"; i > 0; i-- )) 
 do 
+	# By using printf with carriage return we get a nice countdown timer 
+	# without spamming the terminal with new lines
 	printf "\r$i seconds remaining.      "
 	sleep 1
 done
-
 echo ""
 
+# The alarm itself
 
-
-# Comment out or remove any of the lines below if you're missing their dependencies.
-notify-send "$messagestring"; 
-figlet "$messagestring"; 
-#espeak "$messagestring";
-paplay /home/carkasjak/Audio/1happyhello.wav &
-
+notify-send "$messagestring" 
+figlet "$messagestring" 
+paplay "$alarmsound" &
