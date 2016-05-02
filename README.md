@@ -1,2 +1,8 @@
 # my-stupid-bash-scripts
-Small, but stupid scripts that I use to automate certain tasks on my own computer.
+Scripts that I use to automate certain tasks on my own computer.
+
+ttimer.sh:
+A simple and stupid tea timer with an alarm and notifications.
+
+tvclack.sh:
+Find all .rar files within the download folder and subfolders, and unrar them to the desired location.
