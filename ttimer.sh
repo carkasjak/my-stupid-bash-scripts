@@ -14,9 +14,9 @@ alarmsound="/home/carkasjak/Audio/1happyhello.wav"
 # Accepts an integer as input to specify number of seconds
 if [[ "$1" =~ ^-?[0-9]+$ ]]; then
 	sleeptime="$1"
+	echo "Counting down from $1 seconds."
 else
-	echo "$1 is not an integer. Using default time. ($sleeptime seconds)"
-	echo ""
+	echo "Counting down from $sleeptime seconds. (default)"
 fi
 
 # Counting down
