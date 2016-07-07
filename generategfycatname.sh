@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# get wordlists from http://test.gfycat.com/animals
+# and http://test.gfycat.com/adjectives
+
 animals=/home/carkasjak/Scripts/animals.txt
 adjectives=/home/carkasjak/Scripts/adjectives.txt
 
