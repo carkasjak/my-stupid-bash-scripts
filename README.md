@@ -9,5 +9,3 @@ Find all .rar files within the download folder and subfolders, and unrar them to
 
 generategfycatname.sh:
 Generates random names like the gfycat urls from wordlists.
-http://test.gfycat.com/animals
-http://test.gfycat.com/adjectives
