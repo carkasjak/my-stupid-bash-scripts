@@ -7,7 +7,7 @@ A simple and stupid tea timer with an alarm and notifications.
 tvclack.sh:
 Find all .rar files within the download folder and subfolders, and unrar them to the desired location.
 
-generategfycatname.sh
-A bash script to generate random names like the gfycat urls from wordlists.
+generategfycatname.sh:
+Generates random names like the gfycat urls from wordlists.
 http://test.gfycat.com/animals
 http://test.gfycat.com/adjectives
